@@ -1,0 +1,93 @@
+*{
+    /*width is measured from border to border */
+    box-sizing: border-box;
+}
+footer{
+    position: absolute;
+    text-align: left;
+    bottom: 0%;
+}
+nav{
+    margin-top: 90px;
+    padding: 10px;
+    background-color:rgb(231, 150, 150);
+}
+article{
+    padding: 10px;
+}
+#sidebar{
+   top:50px;
+    position: fixed;  
+   left:756px;
+    float: right;
+   
+    color: #29627e;
+}
+img{
+    width :400px;
+    height:430px;
+}
+
+.form-div
+{
+    width: 80%;
+    margin-top:3%;
+    margin-left: 10%;    
+    box-shadow: 1px 6px 32px grey;
+    height: 455px; 
+    padding:3px; 
+}
+
+section
+{
+    position:relative;
+     height:455px;
+   overflow:auto;
+    background:#fff;
+}
+
+.form-details{
+    margin: 2%;
+    margin-right: 10%;
+}
+
+.container
+{
+    display: inline-block;
+    position: relative;
+    width: 24%;
+    height: 12%;
+    /* max-width: 691px; */
+    margin: 1.3%;
+}
+#textarea {
+    font-size: large;
+   
+    height: 30px;
+    border: 2px solid gray;
+    padding:10px,20px;
+  
+    outline: none;
+    border-top:none;
+    border-left: none;
+    border-right: none;
+  }
+  select{
+      width :150px;
+      height:30px;
+      }
+      .form-control {
+        font-family: system-ui, sans-serif;
+        font-size: 1rem;        
+        line-height: 1.1;
+      }
+
+      #btnReset, #btnSubmit 
+      {
+          background-color:		rgb(218,112,214);
+          color: white;
+          margin-left: 100px;
+          margin-top: 20px;
+          height:30px;
+          width:60px;
+      }

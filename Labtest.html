@@ -1,0 +1,129 @@
+<!-- ! and Enter -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lab Test</title>
+        <!-- link:css -->
+        <link rel="stylesheet" href="css/labtest.css">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+<script type="text/javascript">
+        $(document).ready(function () {
+        $('#btnSubmit').click(function() {
+            var districtName = document.getElementById("districtOptions").value;
+         if (districtName == "Choose") {
+         alert("Please select district");
+         return false;
+            }  
+          checked = $("input[type=checkbox]:checked").length;
+    
+          if(!checked) {
+            alert("You must check at least test type.");
+            return false;
+          }
+
+          
+        });
+
+
+        $('#btnReset').click(function() {
+            $("#formLabDetails")[0].reset();
+            
+        });
+
+    });
+    
+    </script>
+        <div class="form-div">
+        <section>
+           <aside id="sidebar">
+               <img src="Images/Lab-Test/lab-test.jpg">
+               
+            </aside>
+            <article>
+                <form id ="formLabDetails" action=""> 
+              <div class="form-details">
+                  <h2> 1. Contact Details</h2>
+                 <div class="container">
+                    <input type="textbox" id="textarea" 
+                    placeholder="Full Name"></textarea>
+                    <input type="textbox" id="textarea" 
+                    placeholder="Patient id if exists"></textarea>
+                  </div>
+                  <div class="container">
+                    <input type="textbox" id="textarea" 
+                    placeholder="Contact Number"></textarea>
+                    <input type="textbox" id="textarea" 
+                    placeholder="Email id"></textarea>
+                  </div>
+
+                  <h2> 2. Address</h2>
+                  <div class="container">
+                    <input type="textbox" id="textarea" 
+                    placeholder="H-No"></textarea>
+                    <input type="textbox" id="textarea" 
+                    placeholder="Street"></textarea>
+                  </div>
+                  <div class="container">
+                    <input type="textbox" id="textarea" 
+                    placeholder="Area"></textarea>                  
+                  </div>
+                  <h3>District</h3>
+                  <select id="districtOptions" name="districtOptions">
+                    <option value="Choose">Choose</option>
+                    <option value="Kottayam">Kottayam</option>
+                    <option value="Kochi">Kochi</option>
+                    <option value="Pune">Pune</option>
+                  </select>
+                  <h2> 4. Choose Test Type</h2>
+                  <div class="container required" style="width:30%;">
+                    <label class="form-control">
+                        <input type="checkbox" name="checkbox" required/>
+                        CBC
+                      </label>
+                      <br/>
+                      <label class="form-control">
+                        <input type="checkbox" name="checkbox" required/>
+                        Complete Urine
+                      </label>
+                      <br/>
+                      <label class="form-control">
+                        <input type="checkbox" name="checkbox" required />
+                        Lipid Profile
+                      </label>
+                      <br/>
+                      <label class="form-control">
+                        <input type="checkbox" name="checkbox" required />
+                        Thyroid Stimulating Hormone(TSH)
+                      </label>
+                      <br/>
+                      <label class="form-control">
+                        <input type="checkbox" name="checkbox" required/>
+                        Glucose Test
+                      </label>
+                      <br/>
+                    
+                </div>
+                <h2> 5. Due you want Hard Copy of the result?</h2>
+                <div class="container">
+                     <input type="radio" id="yes" name="hard_copy" value="No">
+                      <label for="yes">Yes</label>
+                      <input type="radio" id="no" name="hard_copy" value="No">
+                      <label for="no">No</label><br>
+                </div>
+                <h2> 6. Select comfortable date and time</h2>
+                <input type="datetime-local" id="labTestTime" name="labTestTime">
+              </div>
+            </form>
+            </article>
+        </section>
+        <input id="btnReset" type="reset" text="Reset">
+        <input id="btnSubmit" type="submit" text="Submit">
+    </div>
+    </body>
+    </html>

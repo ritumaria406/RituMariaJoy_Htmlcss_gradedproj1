@@ -1,0 +1,180 @@
+<!-- ! and Enter -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pharmacy</title>
+        <!-- link:css -->
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/index.css">
+    
+    </head>
+    <body>
+       
+        <main>
+        <header class="banner">
+            <h1>Pharmacy</h1>            
+        </header>
+        
+        <nav class="menu">
+            <ul class="menu-group">
+                <li class="sub-menu-group-container">
+                    <a href="#">Home</a>                  
+                </li>
+                <li class="sub-menu-group-container">
+                    <a href="#">Our Medicines</a>
+                    <ul class="sub-menu-group">
+                        <li>
+                            <a href="#">Fever</a>
+                        </li>
+                        <li>
+                            <a href="#">Muscle</a>
+                        </li>
+                        <li>
+                            <a href="#">Pains</a>
+                        </li> 
+                        <li>
+                            <a href="#">(Cold & Cough)</a>
+                        </li> 
+                        </ul>
+                </li>
+                
+                <li class="sub-menu-group-container">
+                    <a href="#">Health Care</a>
+                    <ul class="sub-menu-group">
+                        <li>
+                            <a href="#">Baby Care</a>
+                        </li>
+                        <li>
+                            <a href="#">Skin Care</a>
+                        </li>
+                        <li>
+                            <a href="#">Home Care</a>
+                        </li> 
+                        <li>
+                            <a href="#">Personal Care</a>
+                        </li> 
+                        <li>
+                            <a href="#">Pet Care</a>
+                        </li> 
+                        </ul>
+                </li>
+                <li><a href="labtest.html">Lab Test</a></li>             
+            </ul>           
+        </nav>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="Images/Animation/ani1.jpg" class="img-1" />
+                </div>
+                <div class="mySlides fade">
+                <img src="Images/Animation/ani2.png" class="img-2" />
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/Animation/ani3.jpg" class="img-3" />
+            </div>
+            <div class="mySlides fade">
+                <img src="Images/Animation/ani4.jpg" class="img-4" />
+          </div>
+            <div class="mySlides fade">
+                <img src="Images/Animation/ani5.jpg" class="img-5" />
+            </div> 
+        </div>
+        <div class="menu-items">
+            <section class="covid-care">
+                <h2>Covid Care</h2>
+                <div class="product-item"><span class="product-text">Covid Test Kits</span>
+                    <img src="Images/Products/c1.jpg" class="item-image" />                        
+                    Rs 40/-
+                    <br>
+                    Offer :Rs. 30/-
+                    <br>
+                    <button title="Add to cart">Add to cart</button>
+                </div>
+                <div class="product-item"><span class="product-text">Covid Essentials</span>                    
+                    <img src="Images/Products/c2.jpg" class="item-image" />  
+                    Rs 240/-
+                    <br>
+                    Offer :Rs. 170/-        
+                    <br>
+                    <button title="Add to cart">Add to cart</button>             
+                </div>                   
+                <div class="product-item"><span class="product-text">Santizer Bottle</span> 
+                    <img src="images/Products/c3.jpg" class="item-image" />
+                    Rs 99/-
+                    <br>
+                    Offer :Rs. 87/-  
+                    <br>
+                    <button title="Add to cart">Add to cart</button> 
+                </div>
+                <div class="product-item"><span class="product-text">Mask</span> 
+                    <img src="images/Products/c4.jpg" class="item-image" />
+                    Rs 45/-
+                    <br>
+                    Offer :Rs. 30/-
+                    <br>
+                    <button title="Add to cart">Add to cart</button>
+                </div>
+            </section>
+            <section class="india-news">
+                <h2>Diabetes Care</h2>
+                <div class="product-item"><span class="product-text">Mask</span>
+                    <img src="images/Products/d1.jpg" class="item-image" />
+                    Rs 45/-
+                    <br>
+                    Offer :Rs. 30/-
+                    <br>
+                    <button title="Add to cart">Add to cart</button>
+                    
+                </div>
+                <div class="product-item"><span class="product-text">Mask</span>
+                    <img src="images/Products/d2.jpg" class="item-image" />
+                    Rs 45/-
+                    <br>
+                    Offer :Rs. 30/-
+                    <br>
+                    <button title="Add to cart">Add to cart</button>
+                </div>
+                <div class="product-item"><span class="product-text">Mask</span>
+                    <img src="images/Products/d3.jpg" class="item-image" />
+                    Rs 45/-
+                    <br>
+                    Offer :Rs. 30/-
+                    <br>
+                    <button title="Add to cart">Add to cart</button>
+                </div>
+                <div class="product-item"><span class="product-text">Mask</span>
+                    <img src="images/Products/d4.png" class="item-image" />
+                    Rs 45/-
+                    <br>
+                    Offer :Rs. 30/-
+                    <br>
+                    <button title="Add to cart">Add to cart</button>
+                </div>
+               
+            </section>
+        </div>
+    <footer class="footer">Footer(“@copyright. Only for demonstration purposes</footer>
+    </main>
+       
+         
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName('mySlides');             
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}   
+             
+              slides[slideIndex-1].style.display = 'block';               
+              setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+            </script>
+    </body>
+</html>
